@@ -1,9 +1,9 @@
 name = "no style, please!"
 description = "A (nearly) no-CSS, fast, minimalist Zola theme"
 license = "MIT"
-homepage = "https://gitlab.com/4bcx/no-style-please-zola"
+homepage = "https://gitlab.com/4bcx/no-style-please"
 min_version = "0.4.0"
-demo = "https://4b.cx/no-style-please-zola"
+demo = "https://4bcx.gitlab.io/no-style-please"
 
 [extra]
 
