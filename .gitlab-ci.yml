@@ -1,0 +1,16 @@
+image: alpine:latest
+pages:
+  script:
+    # Install the zola package from the alpine community repositories
+    - apk add --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ zola
+    # Execute zola build
+    - zola build
+
+  artifacts:
+    paths:
+      # Path of our artifacts
+      - public
+
+  # This config will only publish changes that are pushed on the master branch
+  only:
+    - master

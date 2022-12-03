@@ -1,0 +1,18 @@
+base_url = "https://4b.cx/no-style-please/"
+title = "no style, please!"
+description = "A (nearly) no-CSS, fast, minimalist Zola theme."
+
+compile_sass = true
+build_search_index = false
+generate_feed = true
+
+taxonomies = [
+    { name = "categories" },
+]
+
+[markdown]
+highlight_code = true
+
+[extra]
+author = "Ahmed Alaa"
+logo = "images/logo.png"

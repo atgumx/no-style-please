@@ -1,0 +1,24 @@
+---
+extra:
+    list_pages: false
+---
+
+- info
+    - a (nearly) no-CSS, fast, minimalist Zola theme.
+    - [gitlab](https://gitlab.com/4bcx/no-style-please) and [github](https://github.com/4bcx/no-style-please) repos
+    - ported from [riggraz](https://riggraz.dev/)'s [no style, please! Jekyll theme](https://riggraz.dev/no-style-please/)
+- posts
+    - [Overview Post](./overview-post)
+    - [Language Tests](./language-tests)
+    - [Post Example With Hr](./post-example-with-hr)
+    - [Very Very Very Long Title And Very Very Very Short Content](./very-very-very-long-title-and-very-very-very-short-content)
+    - [Post Example With Headings And Toc](./post-example-with-headings-and-toc)
+- [categories](./categories)
+    - [example](./categories/example)
+- [feed](./atom.xml)
+- another list
+    - with subitems
+        - with subsubitems
+        - [example page](./about)
+- PRO TIP
+    - unlike the [original](https://riggraz.dev/no-style-please/) theme, this list is just the contents of `content/_index.md`

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+<p><a href="{{ current_path }}..">..</a>{{ current_path }}</p>
+
+<h1>{{ taxonomy.name }}</h1>
+{% endblock header %}
+
+{% block content %}
+<ul>
+{% for term in terms %}
+    <li>
+        <a href="{{ term.permalink | safe }}">{{ term.name }}</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock content %}
