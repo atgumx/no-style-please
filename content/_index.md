@@ -1,6 +1,4 @@
 ---
-extra:
-    list_pages: false
 ---
 
 - info

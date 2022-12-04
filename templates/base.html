@@ -8,31 +8,41 @@
 
         {% if page.title %}
         {% set title = page.title %}
-        {% else %}
+        {% elif section.title %}
+        {% set title = section.title %}
+        {% elif config.title %}
         {% set title = config.title %}
         {% endif %}
 
         {% if page.extra.author %}
         {% set author = page.extra.author %}
-        {% else %}
+        {% elif section.extra.author %}
+        {% set author = section.extra.author %}
+        {% elif config.extra.author %}
         {% set author = config.extra.author %}
         {% endif %}
 
         {% if page.description %}
         {% set description = page.description | truncate(length=150) %}
-        {% else %}
+        {% elif section.description %}
+        {% set description = section.description | truncate(length=150) %}
+        {% elif config.description %}
         {% set description = config.description | truncate(length=150) %}
         {% endif %}
 
         {% if page.extra.image %}
         {% set image = get_url(path=page.extra.image, trailing_slash=false) %}
-        {% else %}
+        {% elif section.extra.image %}
+        {% set image = get_url(path=section.extra.image, trailing_slash=false) %}
+        {% elif config.extra.logo %}
         {% set image = get_url(path=config.extra.logo, trailing_slash=false) %}
         {% endif %}
 
         {% if page.permalink %}
         {% set url = page.permalink %}
-        {% else %}
+        {% elif section.permalink %}
+        {% set url = section.permalink %}
+        {% elif config.base_url %}
         {% set url = config.base_url %}
         {% endif %}
 

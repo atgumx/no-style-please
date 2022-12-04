@@ -24,11 +24,20 @@ theme = "no-style-please"
 
 ### Pages list in homepage
 
-To enable listing of pages in homepage add the following in `content\_index.md` frontmatter
+To enable listing of pages in homepage add the following in `config.toml`
 
 ```toml
-[exta]
+[extra]
 list_pages = false
+```
+
+### Add TOC to pages
+
+In a page frontmatter, set `extra.add_toc` to `true`
+
+```toml
+[extra]
+add_toc = true
 ```
 
 ### Extra data

@@ -3,7 +3,6 @@ title = "no style, please!"
 description = "A (nearly) no-CSS, fast, minimalist Zola theme."
 
 compile_sass = true
-build_search_index = false
 generate_feed = true
 
 taxonomies = [
