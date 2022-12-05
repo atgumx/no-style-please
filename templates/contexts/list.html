@@ -6,11 +6,9 @@
 {% endblock header %}
 
 {% block content %}
-<ul>
+<p>
 {% for term in terms %}
-    <li>
-        <a href="{{ term.permalink | safe }}">{{ term.name }}</a>
-    </li>
+<a href="{{ term.permalink | safe }}">@{{ term.name }}</a>
 {% endfor %}
-</ul>
+</p>
 {% endblock content %}

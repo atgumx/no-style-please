@@ -22,6 +22,19 @@ theme = "no-style-please"
 
 ## Options
 
+### Default taxonomies
+
+Special templates for `tags`, `categories`, and `contexts` taxonomies are provided. However, generic templates exist for custom taxonomies.
+
+To use taxonomies, in a page metadata add
+
+```toml
+[taxonomies]
+tags = [ 'tag1', 'tag2' ]
+categories = [ 'category A', 'B class' ]
+genre = [ 'rock', 'alternative' ]   # custom taxonomy
+```
+
 ### Pages list in homepage
 
 To enable listing of pages in homepage add the following in `config.toml`
@@ -29,6 +42,26 @@ To enable listing of pages in homepage add the following in `config.toml`
 ```toml
 [extra]
 list_pages = false
+```
+
+### Header and footer nav links
+
+Also in the `extra` section in `config.toml`
+
+```toml
+[extra]
+
+header_nav = [
+    { name = "~home", url = "/" },
+    { name = "#tags", url = "/tags" },
+    { name = "+categories", url = "/categories" },
+    { name = "@contexts", url = "/contexts" },
+]
+footer_nav = [
+    { name = "< previous", url = "#" },
+    { name = "webring", url = "#" },
+    { name = "next >", url = "#" },
+]
 ```
 
 ### Add TOC to pages

@@ -95,6 +95,13 @@
     <body theme="auto">
         <div class="w">
             <header>
+                {% if config.extra.header_nav %}
+                <nav>
+                    {% for nav_item in config.extra.header_nav %}
+                    <a href="{{ nav_item.url | safe }}">{{ nav_item.name }}</a>
+                    {% endfor %}
+                </nav>
+                {% endif %}
                 {% block header %}{% if title %}<h1>{{ config.title }}</h1>{% endif %}{% endblock header %}
             </header>
             <main class="page-content" aria-label="Content">
@@ -102,6 +109,13 @@
             </main>
             <footer>
                 {% block footer %}{% endblock footer %}
+                {% if config.extra.footer_nav %}
+                <nav>
+                    {% for nav_item in config.extra.footer_nav %}
+                    <a href="{{ nav_item.url | safe }}">{{ nav_item.name }}</a>
+                    {% endfor %}
+                </nav>
+                {% endif %}
             </footer>
         </div>
     </body>

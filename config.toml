@@ -6,7 +6,9 @@ compile_sass = true
 generate_feed = true
 
 taxonomies = [
+    { name = "tags" },
     { name = "categories" },
+    { name = "contexts" },
 ]
 
 [markdown]
@@ -15,3 +17,14 @@ highlight_code = true
 [extra]
 author = "Ahmed Alaa"
 logo = "images/logo.png"
+header_nav = [
+    { name = "~home", url = "/" },
+    { name = "#tags", url = "/tags" },
+    { name = "+categories", url = "/categories" },
+    { name = "@contexts", url = "/contexts" },
+]
+footer_nav = [
+    { name = "< previous", url = "#" },
+    { name = "webring", url = "#" },
+    { name = "next >", url = "#" },
+]
