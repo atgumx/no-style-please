@@ -41,7 +41,7 @@ To enable listing of pages in homepage add the following in `config.toml`
 
 ```toml
 [extra]
-list_pages = false
+list_pages = true
 ```
 
 ### Header and footer nav links
