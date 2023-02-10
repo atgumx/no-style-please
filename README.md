@@ -56,6 +56,7 @@ header_nav = [
     { name = "#tags", url = "/tags" },
     { name = "+categories", url = "/categories" },
     { name = "@contexts", url = "/contexts" },
+    { name = "example", url = "http://example.com", new_tab=true },
 ]
 footer_nav = [
     { name = "< previous", url = "#" },
