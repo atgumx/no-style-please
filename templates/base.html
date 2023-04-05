@@ -60,7 +60,8 @@
         {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
         {% if image %}<meta property="og:image" content="{{ image }}">{% endif %}
 
-        {% if config.extra.twitter %}
+        {% set twitter_card = config.extra.twitter_card | default(value=true) %}
+        {% if twitter_card != false %}
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ url | safe }}">
         {% if title %}<meta property="twitter:title" content="{{ title }}">{% endif %}
