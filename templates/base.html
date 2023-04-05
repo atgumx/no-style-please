@@ -60,11 +60,13 @@
         {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
         {% if image %}<meta property="og:image" content="{{ image }}">{% endif %}
 
+        {% if config.extra.twitter %}
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ url | safe }}">
         {% if title %}<meta property="twitter:title" content="{{ title }}">{% endif %}
         {% if description %}<meta property="twitter:description" content="{{ description }}">{% endif %}
         {% if image %}<meta property="twitter:image" content="{{ image }}">{% endif %}
+        {% endif %}
         
         <link rel="canonical" href="{{ url | safe }}">
         {% if image %}<link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path=config.extra.logo, trailing_slash=false) }}">{% endif %}

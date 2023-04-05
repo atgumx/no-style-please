@@ -17,6 +17,7 @@ highlight_code = true
 [extra]
 author = "Ahmed Alaa"
 logo = "images/logo.png"
+twitter = true
 header_nav = [
     { name = "~home", url = "/" },
     { name = "#tags", url = "/tags" },
