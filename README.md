@@ -44,6 +44,12 @@ To enable listing of pages in homepage add the following in `config.toml`
 list_pages = true
 ```
 
+If you do not want the date of the post added next to the title in the list, add the following as well:
+
+```toml
+no_list_date = true
+```
+
 ### Header and footer nav links
 
 Also in the `extra` section in `config.toml`
