@@ -1,7 +1,7 @@
 # no style, please!
 
 A (nearly) no-CSS, fast, minimalist [Zola](https://www.getzola.org/) theme.
-Ported from from [riggraz](https://riggraz.dev/)'s [no style, please! Jekyll theme](https://riggraz.dev/no-style-please/), and I use it for [my site](https://4b.cx/)
+Ported from from [riggraz](https://riggraz.dev/)'s [no style, please! Jekyll theme](https://riggraz.dev/no-style-please/), and you can find the demo [here](https://atgumx.gitlab.io/no-style-please/)
 
 ![screenshot](./screenshot.png)
 
