@@ -3,7 +3,7 @@
 
 - info
     - a (nearly) no-CSS, fast, minimalist Zola theme.
-    - [gitlab](https://gitlab.com/4bcx/no-style-please) and [github](https://github.com/4bcx/no-style-please) repos
+    - [gitlab](https://gitlab.com/atgumx/no-style-please) and [github](https://github.com/atgumx/no-style-please) repos
     - ported from [riggraz](https://riggraz.dev/)'s [no style, please! Jekyll theme](https://riggraz.dev/no-style-please/)
 - posts
     - [Overview Post](./overview-post)
