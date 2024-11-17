@@ -5,9 +5,9 @@
 
 {% if config.extra.list_pages %}
 {% if paginator %}
-{% set pages = paginator.pages %}
+{% set pages = paginator.pages | sort(attribute="date") | reverse %}
 {% else %}
-{% set pages = section.pages %}
+{% set pages = section.pages | sort(attribute="date") | reverse %}
 {% endif %}
 <ul>
 {% for page in pages %}
